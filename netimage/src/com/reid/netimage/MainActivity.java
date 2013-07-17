@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +24,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
+        StrictMode.setThreadPolicy(new 
+        StrictMode.ThreadPolicy.Builder().detectDiskReads().detectDiskWrites().detectNetwork().penaltyLog().build());
+        StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder().detectLeakedSqlLiteObjects().detectLeakedClosableObjects().penaltyLog().penaltyDeath().build());
+        
         pathText = (EditText)findViewById(R.id.imagepath);
         imageView = (ImageView)findViewById(R.id.imageView);
         Button button = (Button)this.findViewById(R.id.button);
@@ -37,7 +42,7 @@ public class MainActivity extends Activity {
 			try {
 				byte[] data = ImageService.getImage(path);
 				Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
-				imageView.setImageBitmap(bitmap);//��ʾͼƬ				
+				imageView.setImageBitmap(bitmap);//��ʾͼƬ				
 			} catch (Exception e) {
 				e.printStackTrace();
 				Toast.makeText(getApplicationContext(), R.string.error, Toast.LENGTH_LONG).show();
