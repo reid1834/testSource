@@ -1,5 +1,5 @@
 <html>
-	<body bgcolor="yellow">
+	<body bgcolor="yellow" background="image/background.jpg">
 		<h1>hello</h1>
 		<p>你好疯了数据库了几声的路径方式地方 </p>
 		<h1>This is a heading</h1>
@@ -96,5 +96,368 @@
 	<p>一打有<del>二十</del><ins>十二</ins>件</p>
 	<p>大多数浏览器会改为删除文版和下划线文本。</p>
 	<p>一些老式的浏览器会把删除文本和下划线文本显示为普通文本。</p>
+	
+	<head>
+		<style type="text/css">
+			h1{color:red}
+			p{color:blue}
+		</style>
+	<head>
+	<h1>header 1</h1>
+	<p>A paragraph.</p>
+	
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+	<meta http-equiv=""Content-Language" content="zh-cn"/>
+	</head>
+	<a href="www.apple.com.cn" style="text-decoration:none">这是一个链接</a>
+	
+	<p><a href="index.html">本文本</a>是一个指向本网站中的一个页面的链接.</p>
+	<p><a href="http://www.apple.com.cn">本文本</a>是一个指向万维网上的页面的链接。</p>
+	
+	<p>
+	您也可以使用图片来作链接：
+	<a href="www.google.com.hk">
+	<img border="0" src="/call_icon.png"/>
+	</a>
+	</p>
+	
+	<a href="http://www.w3school.com.cn/" target="_blank">Visit W3school!</a>
+	<p>如果把链接的target属性设置为"_blank",该链接会在心窗口中打开。</p>
+	
+	<a name="tips">基本的注意事项 - 有用的提示</a>
+	<a href=“#tips”>有用的提示</a>
+	<a href="http://www.w3school.com.cn/html/html_links.asp#tips">有用的提示</a>
+	
+	
+	<p>
+	<a href="#C4">查看Chapter 4.</a>
+	</p>
+	<h2> Chapter 1</h2>
+	<p>This chapter explains ba bla bla</p>
+	
+	<h2>Chapter 2</h2>
+	<p>This chapter explains ba bla bla</p>
+	
+	<h2>Chapter 3</h2>
+	<p>This chapter explains ba bla bla</p>
+	
+	<h2><a name="C4">Chapter 4</a></h2>
+	<p>This chapter explains ba bla bla</p>
+	
+	<p>
+	一幅图像：
+	<img src="/i/eg_mouse.jpg" width="128" height="128" />
+	</p>
+
+	<p>
+	一幅动画图像：
+	<img src="/i/eg_cute.gif" width="50" height="50" />
+	</p>
+
+	<p>请注意，插入动画图像的语法与插入普通图像的语法没有区别。</p>
+
+	<p>
+	来自另一个文件夹的图像：
+	<img src="image/call_icon.png" alt="call icon"/>
+	</p>
+
+	<p>
+	来自 W3School.com.cn 的图像：
+	<img src="http://www.w3school.com.cn/i/w3school_logo_white.gif" />
+	</p>
+	
+	<h2>未设置对齐方式的图像：</h2>
+
+	<p>图像 <img src ="image/call_icon.png"> 在文本中</p>
+
+	<h2>已设置对齐方式的图像：</h2>
+
+	<p>图像 <img src="image/call_icon.png" align="bottom"> 在文本中</p>
+
+	<p>图像 <img src ="image/call_icon.png" align="middle"> 在文本中</p>
+
+	<p>图像 <img src ="image/call_icon.png" align="top"> 在文本中</p>
+
+	<p>请注意，bottom 对齐方式是默认的对齐方式。</p>
+	
+	
+	<p>
+	<img src ="image/car.png" align ="left"> 
+	带有图像的一个段落。图像的 align 属性设置为 "left"。图像将浮动到文本的左侧。
+	</p>
+
+	<p>
+	<img src ="image/car.png" align ="right"> 
+	带有图像的一个段落。图像的 align 属性设置为 "right"。图像将浮动到文本的右侧。
+	</p>
+	
+	<img src="image/car.png" width="50" height="50">
+
+	<br />
+
+	<img src="image/car.png" width="100" height="100">
+
+	<br />
+
+	<img src="image/car.png" width="200" height="200">
+
+	<p>通过改变 img 标签的 "height" 和 "width" 属性的值，您可以放大或缩小图像。</p>
+	
+	
+	<p>您也可以把图片作为链接来使用：
+	<a href="www.baidu.com">
+	<img border="0" src="image/car.png"/>
+	</a>
+	</p>
+	
+	
+	
+	<p>请把鼠标移动到图像上，看一下状态栏的坐标如何变化。</p>
+
+	<a href="/example/html/html_ismap.html">
+	<img src="/i/eg_planets.jpg" ismap />
+	</a>
+	
+	<p>每个表格由table标签开始。</p>
+	<p>每个表格行由tr标签开始。</p>
+	<p>每个表格数据由td标签开始。</p>
+	
+	<h4>一列：</h4>
+	<table border="1">
+		<tr>
+			<td>100</td>
+		</tr>
+	</table>
+	
+	<h4>一行三列：</h4>
+	<table border="4">
+		<tr>
+			<td>100</td>
+			<td>200</td>
+			<td>300</td>
+		<tr>
+	</table>
+	
+	<h4>两行三列：</h4>
+	<table border="15">
+		<tr>
+			<td>100</td>
+			<td>200</td>
+			<td>300</td>
+		<tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>500</td>
+			<td>600</td>
+		<tr>
+	</table>
+	
+	
+	<h4>一个无序列表:</h4>
+	<ul>
+		<li>咖啡</li>
+		<li>茶</li>
+		<li>牛奶</li>
+	</ul>
+	
+	<h4>一个有序列表：</h4>
+	<ol>
+		<li>咖啡</li>
+		<li>茶</li>
+		<li>牛奶</li>
+	</ol>
+	
+	<dl>
+	<dt>Coffee</dt>
+	<dd>Black hot drink</dd>
+	<dt>Milk</dt>
+	<dd>White cold drink</dd>
+	</dl>
+	
+	<h4>Disc 项目符号列表：</h4>
+	<ul type="disc">
+	 <li>苹果</li>
+	 <li>香蕉</li>
+	 <li>柠檬</li>
+	 <li>桔子</li>
+	</ul>  
+
+	<h4>Circle 项目符号列表：</h4>
+	<ul type="circle">
+	 <li>苹果</li>
+	 <li>香蕉</li>
+	 <li>柠檬</li>
+	 <li>桔子</li>
+	</ul>  
+
+	<h4>Square 项目符号列表：</h4>
+	<ul type="square">
+	 <li>苹果</li>
+	 <li>香蕉</li>
+	 <li>柠檬</li>
+	 <li>桔子</li>
+	</ul>  
+	
+	<h4>数字列表：</h4>
+	<ol>
+	 <li>苹果</li>
+	 <li>香蕉</li>
+	 <li>柠檬</li>
+	 <li>桔子</li>
+	</ol>  
+
+	<h4>字母列表：</h4>
+	<ol type="A">
+	 <li>苹果</li>
+	 <li>香蕉</li>
+	 <li>柠檬</li>
+	 <li>桔子</li>
+	</ol>  
+
+	<h4>小写字母列表：</h4>
+	<ol type="a">
+	 <li>苹果</li>
+	 <li>香蕉</li>
+	 <li>柠檬</li>
+	 <li>桔子</li>
+	</ol>  
+
+	<h4>罗马字母列表：</h4>
+	<ol type="I">
+	 <li>苹果</li>
+	 <li>香蕉</li>
+	 <li>柠檬</li>
+	 <li>桔子</li>
+	</ol>  
+
+	<h4>小写罗马字母列表：</h4>
+	<ol type="i">
+	 <li>苹果</li>
+	 <li>香蕉</li>
+	 <li>柠檬</li>
+	 <li>桔子</li>
+	</ol>  
+	
+	<h4>一个嵌套列表：</h4>
+	<ul>
+	  <li>咖啡</li>
+	  <li>茶
+	    <ul>
+	    <li>红茶</li>
+	    <li>绿茶</li>
+	    </ul>
+	  </li>
+	  <li>牛奶</li>
+	</ul>
+	
+	<h4>一个嵌套列表：</h4>
+	<ul>
+	  <li>咖啡</li>
+	  <li>茶
+	    <ul>
+	    <li>红茶</li>
+	    <li>绿茶
+	      <ul>
+	      <li>中国茶</li>
+	      <li>非洲茶</li>
+	      </ul>
+	    </li>
+	    </ul>
+	  </li>
+	  <li>牛奶</li>
+	</ul>
+	
+	<h2>一个定义列表：</h2>
+
+	<dl>
+	   <dt>计算机</dt>
+	   <dd>用来计算的仪器 ... ...</dd>
+	   <dt>显示器</dt>
+	   <dd>以视觉方式显示信息的装置 ... ...</dd>
+	</dl>
+	
+	<head>
+	<style type="text/css">
+	div#container{width:500px}
+	div#header {background-color:#99bbbb;}
+	div#menu {background-color:#ffff99; height:200px; width:100px; float:left;}
+	div#content {background-color:#EEEEEE; height:200px; width:400px; float:left;}
+	div#footer {background-color:#99bbbb; clear:both; text-align:center;}
+	h1 {margin-bottom:0;}
+	h2 {margin-bottom:0; font-size:14px;}
+	ul {margin:0;}
+	li {list-style:none;}
+	</style>
+	</head>
+
+	<body>
+
+	<div id="container">
+
+	<div id="header">
+	<h1>Main Title of Web Page</h1>
+	</div>
+
+	<div id="menu">
+	<h2>Menu</h2>
+	<ul>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript</li>
+	</ul>
+	</div>
+
+	<div id="content">Content goes here</div>
+
+	<div id="footer">Copyright W3School.com.cn</div>
+
+	</div>
+	
+	
+	
+	<form>
+	名：
+	<input type="text" name="firstname">
+	<br />
+	姓：
+	<input type="text" name="lastname">
+	</form>
+	
+	<form>
+	<input type="radio" name="sex" value="male"> Male
+	<input type="radio" name="sex" value="female"> Female
+	</form>
+	
+	<form>
+	<input type="checkbox" name="bike"/>
+	I have a bike
+	<br/>
+	<input type="checkbox" name="car"/>
+	I have a car
+	</form>
+	
+	<form name="input" action="html_form_action.asp" method="get">
+	Username:
+	<input type="text" name="user"/>
+	<input type="submit" value="Submit"/>
+	</form>
+	
+	
+	<iframe src="/example/html/demo_iframe.html" width="200" height="200"></iframe>
+
+	<p>某些老式的浏览器不支持内联框架。</p>
+	<p>如果不支持，则 iframe 是不可见的。</p>
+	
+	<iframe src="/example/html/demo_iframe.html" frameborder="0"></iframe>
+
+	<p>某些老式的浏览器不支持内联框架。</p>
+	<p>如果不支持，则 iframe 是不可见的。</p>
+	
+	<iframe src="/example/html/demo_iframe.html" name="iframe_a"></iframe>
+
+	<p><a href="http://www.w3school.com.cn" target="iframe_a">W3School.com.cn</a></p>
+
+	<p><b>注释：</b>由于链接的目标匹配 iframe 的名称，所以链接会在 iframe 中打开。</p>
 	</body>
 </html>
