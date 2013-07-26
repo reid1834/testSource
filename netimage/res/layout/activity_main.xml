@@ -10,7 +10,7 @@
     <EditText 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="http://hiphotos.baidu.com/lvpics/pic/item/024f78f0f736afc370b5e520b319ebc4b745123d.jpg%22,%22test.jpg"
+        android:text="http://192.168.20.47:8080/web/aaa.png"
         android:id="@+id/imagepath"/>
     <Button
         android:layout_width="wrap_content"
