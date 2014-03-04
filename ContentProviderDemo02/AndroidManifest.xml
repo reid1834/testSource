@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jiahui.provider"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        
+        <uses-library android:name="android.test.runner"/>
+        <activity
+            android:label="@string/app_name"
+            android:name=".ContentProviderDemoActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:authorities="com.jiahui.provider.myprovider"
+            android:name=".MyProvider" >
+        </provider>
+        
+            <activity android:name=".ItemActivity"></activity>
+    </application>
+
+     <instrumentation android:name="android.test.InstrumentationTestRunner"
+  android:targetPackage="com.jiahui.provider" android:label="Tests for My App" />
+
+</manifest>
